@@ -1,4 +1,5 @@
-<nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md text-slate-900">
+
+<nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md text-slate-900 shadow-sm">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
       
@@ -28,13 +29,13 @@
         <?php endif; ?>
       </div>
 
-      <!-- Mobile Menu Button (Lucide Icon used) -->
+      <!-- Mobile Menu Button -->
       <button id="menuBtn" class="md:hidden p-2 rounded-xl hover:bg-slate-100 transition">
         <i data-lucide="menu" class="w-6 h-6 text-slate-600"></i>
       </button>
     </div>
 
-    <!-- Mobile Menu (Dropdown) -->
+    <!-- Mobile Menu -->
     <div id="mobileMenu" class="hidden md:hidden pb-6 pt-2 border-t border-slate-100 animate-in fade-in slide-in-from-top-4 duration-200">
       <div class="flex flex-col gap-2">
         <a href="<?= BASE_URL ?>#features" class="px-4 py-3 rounded-xl hover:bg-slate-50 text-slate-700 no-underline font-medium">Features</a>
@@ -57,17 +58,35 @@
   </div>
 </nav>
 
+<!-- EXTRA CSS FIX -->
+<style>
+  html, body {
+    overflow-x: hidden;
+  }
+</style>
+
+<!-- SCRIPT -->
 <script>
-  // Mobile Menu Toggle Logic
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
 
   menuBtn.onclick = () => {
     mobileMenu.classList.toggle('hidden');
-    // Change icon between menu and x
+
     const icon = menuBtn.querySelector('i');
     const isHidden = mobileMenu.classList.contains('hidden');
     icon.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+
     if (typeof lucide !== 'undefined') lucide.createIcons();
   };
+
+  // Scroll shadow effect
+  window.addEventListener("scroll", function () {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 10) {
+      nav.classList.add("shadow-md");
+    } else {
+      nav.classList.remove("shadow-md");
+    }
+  });
 </script>
