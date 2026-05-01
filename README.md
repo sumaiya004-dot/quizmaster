@@ -37,16 +37,49 @@ QuizMaster is a web-based quiz application that allows users to practice multipl
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions (Beginner Friendly)
 
-1. Install XAMPP
-2. Copy the project folder into `htdocs`
-3. Open phpMyAdmin
-4. Create a database named **quizmaster**
-5. Import the SQL file from `sql/schema.sql`
-6. Configure database in `config/database.php`
-7. Run in browser:
-   👉 http://localhost/quizmaster
+1. Install XAMPP from https://www.apachefriends.org
+
+2. Open XAMPP Control Panel and start **Apache** and **MySQL**
+
+3. Copy the project folder into:
+
+   ```
+   C:\xampp\htdocs\
+   ```
+
+4. Open browser and go to:
+
+   ```
+   http://localhost/phpmyadmin
+   ```
+
+5. Create a new database named:
+
+   ```
+   quizmaster
+   ```
+
+6. Click on the database → Import → Select file:
+
+   ```
+   sql/schema.sql
+   ```
+
+7. Open file:
+
+   ```
+   config/database.php
+   ```
+
+   and update database name, username, and password if required
+
+8. Run the project in browser:
+
+   ```
+   http://localhost/quizmaster
+   ```
 
 ---
 
