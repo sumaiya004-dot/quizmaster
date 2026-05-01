@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /quizmaster/
+
+# If file exists, don't rewrite
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all to index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
