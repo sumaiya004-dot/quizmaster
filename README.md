@@ -60,41 +60,54 @@ QuizMaster is a web-based quiz application that allows users to practice multipl
 
 ## 📱 Mobile Responsiveness
 
-The application is fully responsive and works smoothly on mobile devices
-Users can take quizzes, view results, and access the leaderboard smoothly on smaller screens using a clean and adaptive layout.
+The application is fully responsive and works smoothly on mobile devices.
+Users can take quizzes, view results, and access the leaderboard easily on smaller screens.
 
----.
+### 📱 Mobile View
 
-### Mobile View
+<p align="center">
+  <img src="assets/screenshots/mobile-dashboard.png" width="300"/>
+</p>
 
-![Mobile](assets/screenshots/mobile-dashboard.png)
 ---
 
 ## 📸 Screenshots
 
 ### 🏠 Home
 
-![Home](assets/screenshots/home.png)
+<p align="center">
+  <img src="assets/screenshots/home.png" width="700"/>
+</p>
 
 ### 🔐 Login
 
-![Login](assets/screenshots/login.png)
+<p align="center">
+  <img src="assets/screenshots/login.png" width="500"/>
+</p>
 
 ### 📝 Signup
 
-![Signup](assets/screenshots/signup.png)
+<p align="center">
+  <img src="assets/screenshots/signup.png" width="500"/>
+</p>
 
 ### 📊 Dashboard
 
-![Dashboard](assets/screenshots/dashboard.png)
+<p align="center">
+  <img src="assets/screenshots/dashboard.png" width="700"/>
+</p>
 
 ### 👤 Profile
 
-![Profile](assets/screenshots/profile.png)
+<p align="center">
+  <img src="assets/screenshots/profile.png" width="600"/>
+</p>
 
 ### 🏆 Leaderboard
 
-![Leaderboard](assets/screenshots/leaderboard.png)
+<p align="center">
+  <img src="assets/screenshots/leaderboard.png" width="700"/>
+</p>
 
 ---
 
@@ -113,6 +126,8 @@ quizmaster/
 ├── sql/
 ├── docs/
 ├── assets/
+├── includes/
+├── index.php
 ```
 
 ---
