@@ -22,7 +22,7 @@ QuizMaster is a web-based quiz application that allows users to practice multipl
 
 ## 🛠️ Technologies Used
 
-* Frontend: HTML, CSS, JavaScript, Bootstrap
+* Frontend: HTML, CSS, JavaScript, Tailwind
 * Backend: PHP
 * Database: MySQL
 
